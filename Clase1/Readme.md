@@ -15,5 +15,4 @@ Sino ha instalado aun conda, por favor en la terminal ejecute el siguiente coman
 curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
-
-3. 
+Laura es una bacana !!!
