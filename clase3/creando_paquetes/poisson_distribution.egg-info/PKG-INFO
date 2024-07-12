@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: poisson-distribution
+Version: 0.1
+Summary: Un paquete para trabajar con distribuciones de Poisson
+Home-page: https://github.com/tu_usuario/poisson_distribution
+Author: Gente maravillosa de la nacional
+Author-email: tu_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
