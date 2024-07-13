@@ -121,7 +121,6 @@ def imc_con_try_except():
     try:
         peso = int(peso)
         print("El dato está bueno {} como peso".format(peso))
-        
     except:
         print('Ingresa nuevamente el valor de peso en kilogramos!!!')
         
@@ -140,8 +139,46 @@ imc_con_try_except()
 
 #%%
 
+def clasificar_imc(imc):
+    if imc < 18.5:
+        return "Bajo peso"
+    elif imc < 24.9:
+        return "Peso normal"
+    elif imc < 29.9:
+        return "Sobrepeso"
+    else:
+        return "Obesidad"
 
+def obtener_peso():
+    while True:
+        peso = input("Ingresa tu peso mi amig@ : ")
+        try:
+            peso = float(peso)  # Puedes usar int(peso) si solo quieres enteros
+            print("El dato está bueno {} como peso".format(peso))
+            return peso
+        except:
+            print('Ingresa nuevamente el valor de peso en kilogramos!!!')
 
+def obtener_estatura():
+    while True:
+        estatura = input("Ingresa tu estatura mi amig@ : ")
+        try:
+            estatura = float(estatura)
+            print("El dato está bueno {} como estatura".format(estatura))
+            return estatura
+        except :
+            print('Ingresa nuevamente el valor de la estatura en Metros!!!')
+
+def imc_con_try_except():
+    peso = obtener_peso()
+    estatura = obtener_estatura()
+    imc = peso / (estatura ** 2)
+    return clasificar_imc(imc)
+    
+resultado = imc_con_try_except()
+print("Tu clasificación de IMC es: {}".format(resultado))
+
+#%%
 # For ====================
 # Un  ejemplo muy pero muy sencillo
 
