@@ -58,7 +58,109 @@ clasificacion = clasificar_imc(imc)
 # Mostrar el resultado
 print(f"Tu IMC es {imc:.2f}, lo que indica una clasificación de: {clasificacion}.")
 
+
+#===================================#
+## Ejemplo completo como debe ser   #
+#===================================#
+
+
+#%%
+
+def calcular_imc(peso, estatura):
+    try :
+        imc = peso / (estatura ** 2)
+        return imc 
+    except:
+        print("el dato esta chueco!!")
+        pass  
+
+
+
+# Función para clasificar el IMC
+def clasificar_imc(imc):
+    if imc < 18.5:
+        return "Bajo peso"
+    elif imc < 24.9:
+        return "Peso normal"
+    elif imc < 29.9:
+        return "Sobrepeso"
+    else:
+        return "Obesidad"
+
+# Solicitar al usuario su peso y estatura
+peso = float(input("Ingrese su peso en kilogramos: "))
+estatura = float(input("Ingrese su estatura en metros: "))
+
+# Calcular el IMC
+imc = calcular_imc(peso, estatura)
+
+# Clasificar el IMC
+clasificacion = clasificar_imc(imc)
+
+# Mostrar el resultado
+print(f"Tu IMC es {imc:.2f}, lo que indica una clasificación de: {clasificacion}.")
+
+#=========+=================#
+# Ejercicio super completo  #
+#===========================#
+#%%
+
+def clasificar_imc(imc):
+    if imc < 18.5:
+        return "Bajo peso"
+    elif imc < 24.9:
+        return "Peso normal"
+    elif imc < 29.9:
+        return "Sobrepeso"
+    else:
+        return "Obesidad"
+def calcular_imc():
+    peso = input("Ingresa tu peso mi amig@ : ")
+    
+    if peso == int(peso) :
+        print("EL dato esta bueno {} como peso".format(peso))
+    else :
+        print('Ingresa nuevamente el valor de peso en kilogramos!!!')
+        
+    estatura = float(input("Ingresa tu Estatura mi amig@ : "))
+    if estatura == float(estatura) :
+        print("EL dato esta bueno {} como estatura".format(estatura))
+    else :
+        print('Ingresa nuevamente el valor de tu estatura !!!')
+    try:
+        imc = peso / (estatura ** 2)
+        print("esta operación si se puede hacer")
+        return clasificar_imc(imc)
+    except:
+        print("Esta operación no se puede realizar")
+        pass 
+    
+calcular_imc()
+
+#%%
+
+peso = input("Ingresa tu peso mi amig@ : ")
+if peso:
+    print("EL dato esta bueno {} como peso".format(peso))
+else :
+    print('Ingresa nuevamente el valor de peso en kilogramos!!!')
+#%%
+peso = input("Ingresa tu peso mi amig@ : ")
+try:
+    peso_int = int(peso)
+    print("El dato está bueno {} como peso".format(peso_int))
+except ValueError:
+    print('Ingresa nuevamente el valor de peso en kilogramos!!!')
 # %%
+
+## Ejercicio completo con try and except 
+
+def imc_con_try_except():
+    peso = 
+
+
+
+
 
 # For ====================
 # Un  ejemplo muy pero muy sencillo
