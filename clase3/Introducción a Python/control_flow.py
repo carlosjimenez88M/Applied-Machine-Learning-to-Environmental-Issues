@@ -103,8 +103,10 @@ print(f"Tu IMC es {imc:.2f}, lo que indica una clasificación de: {clasificacion
 #=========+=================#
 # Ejercicio super completo  #
 #===========================#
-#%%
 
+
+
+#%%
 def clasificar_imc(imc):
     if imc < 18.5:
         return "Bajo peso"
@@ -114,51 +116,29 @@ def clasificar_imc(imc):
         return "Sobrepeso"
     else:
         return "Obesidad"
-def calcular_imc():
+def imc_con_try_except():
     peso = input("Ingresa tu peso mi amig@ : ")
-    
-    if peso == int(peso) :
-        print("EL dato esta bueno {} como peso".format(peso))
-    else :
+    try:
+        peso = int(peso)
+        print("El dato está bueno {} como peso".format(peso))
+        
+    except:
         print('Ingresa nuevamente el valor de peso en kilogramos!!!')
         
-    estatura = float(input("Ingresa tu Estatura mi amig@ : "))
-    if estatura == float(estatura) :
-        print("EL dato esta bueno {} como estatura".format(estatura))
-    else :
-        print('Ingresa nuevamente el valor de tu estatura !!!')
+    estatura = input("Ingresa tu estatura mi amig@ : ")
     try:
-        imc = peso / (estatura ** 2)
-        print("esta operación si se puede hacer")
-        return clasificar_imc(imc)
+        estatura = float(estatura)
+        print("El dato está bueno {} como estatura".format(estatura_int))
+        
     except:
-        print("Esta operación no se puede realizar")
-        pass 
+        print('Ingresa nuevamente el valor de la estatura en Metros!!!')
     
-calcular_imc()
+    return clasificar_imc(peso/(estatura**2))
+    
+        
+imc_con_try_except()
 
 #%%
-
-peso = input("Ingresa tu peso mi amig@ : ")
-if peso:
-    print("EL dato esta bueno {} como peso".format(peso))
-else :
-    print('Ingresa nuevamente el valor de peso en kilogramos!!!')
-#%%
-peso = input("Ingresa tu peso mi amig@ : ")
-try:
-    peso_int = int(peso)
-    print("El dato está bueno {} como peso".format(peso_int))
-except ValueError:
-    print('Ingresa nuevamente el valor de peso en kilogramos!!!')
-# %%
-
-## Ejercicio completo con try and except 
-
-def imc_con_try_except():
-    peso = 
-
-
 
 
 
