@@ -17,6 +17,10 @@ def imc(peso,altura):
 
 # %%
 imc(100,1.90)
+
+
+
+### Ejemplo while con  soporte 
 # %%
 ## Tarea en clase 
 # Proponga esta función con multiples prints para los 
@@ -24,6 +28,55 @@ imc(100,1.90)
 
 
 
+def clasificar_imc(imc):
+    if imc < 18.5:
+        return "Bajo peso"
+    elif imc < 24.9:
+        return "Peso normal"
+    elif imc < 29.9:
+        return "Sobrepeso"
+    else:
+        return "Obesidad"
+
+def obtener_peso():
+    intentos = 0
+    while intentos < 3:
+        peso = input("Ingresa tu peso mi amig@ : ")
+        try:
+            peso = float(peso) 
+            print("El dato está bueno {} como peso".format(peso))
+            return peso
+        except ValueError:
+            print('Ingresa nuevamente el valor de peso en kilogramos!!!')
+            intentos += 1
+    print('Número máximo de intentos alcanzado para el peso.')
+    return None
+
+def obtener_estatura():
+    intentos = 0
+    while intentos < 3:
+        estatura = input("Ingresa tu estatura mi amig@ : ")
+        try:
+            estatura = float(estatura)
+            print("El dato está bueno {} como estatura".format(estatura))
+            return estatura
+        except ValueError:
+            print('Ingresa nuevamente el valor de la estatura en Metros!!!')
+            intentos += 1
+    print('Número máximo de intentos alcanzado para la estatura.')
+    return None
+
+def imc_con_try_except():
+    peso = obtener_peso()
+    estatura = obtener_estatura()
+    if peso is not None and estatura is not None:
+        imc = peso / (estatura ** 2)
+        return clasificar_imc(imc)
+    else:
+        return "No se pudo calcular el IMC debido a datos incorrectos."
+    
+resultado = imc_con_try_except()
+print("Tu clasificación de IMC es: {}".format(resultado))
 #%%
 def population_density(population, land_area):
     return population/land_area
