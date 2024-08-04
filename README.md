@@ -103,18 +103,12 @@ En la linea 11, donde aparece ZSH_THEMES, cambiela por uno de los que aparece en
 |      4 |                     Tipos de conjuntos , objetos y transformaciones |                                                                                                                                                                                               |                              |
 |      5 |                                      Análisis Exploratorio de datos |                                                                                                                                                                                               |                              |
 |      6 |                                    Introducción al mahcine Learning | [Clase #1](https://github.com/carlosjimenez88M/Applied-Machine-Learning-to-Environmental-Issues/blob/master/Clase6/Clase%20ML_Classification.pdf) , [Clase #2](Clase6/entrenando_modelos.pdf) | [Notebook1](https://colab.research.google.com/drive/1ciRl8LERSrw_ANliRKvGB617M-u4tItG), [Notebook2](https://colab.research.google.com/drive/1SiTN959JUzbrejxGlJX9nicAyGMHx5b7?usp=sharing) |
-|      7 |                                                               CARET |                                                                                                                                                                                               |                              |
+|      7 |   Caret                                                             |                                                                                                                                                                                            [Clase]()   | [CARET Notebook](https://colab.research.google.com/drive/1d2y2UHZIVVqYl1bLrfWZEcq97w-RHNfd?usp=sharing)                             |
 |      8 |                       Machine Learning aplicado a temas ambientales |                                                                                                                                                                                               |                              |
 |      9 |                                                    Series de tiempo |                                                                                                                                                                                               |                              |
 
 
 
-## Notas de clases
-
-En el siguiente link encontrará las notas de clase que el instructor usará para cada una de las sesiones de las clases
-sientase libre de usarlas [Link]()
 
 
-## Referencias 
 
-1. 

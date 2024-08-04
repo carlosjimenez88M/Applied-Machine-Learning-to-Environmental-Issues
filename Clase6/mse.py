@@ -1,3 +1,5 @@
+
+
 #%%
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,8 +12,8 @@ y = 4 + 3 * x + np.random.randn(100, 1)  # Relación lineal con ruido
 # Inicializar parámetros
 w = 0.0
 b = 0.0
-learning_rate = 0.001
-epochs = 1000
+learning_rate = 0.01
+epochs = 100
 
 # Función para calcular el MSE (Mean Squared Error)
 def compute_mse(y, y_pred):
